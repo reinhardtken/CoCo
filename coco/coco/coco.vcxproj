@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{98590070-70E0-4329-AC83-AB75AEEDA17A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>coco</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\PyAttr.h" />
+    <ClInclude Include="..\..\PyBool.h" />
+    <ClInclude Include="..\..\PyBuiltInConcat.h" />
+    <ClInclude Include="..\..\PyBuiltInFPrint.h" />
+    <ClInclude Include="..\..\PyBuiltInInput.h" />
+    <ClInclude Include="..\..\PyBuiltInIter.h" />
+    <ClInclude Include="..\..\PyBuiltInLen.h" />
+    <ClInclude Include="..\..\PyBuiltInPrint.h" />
+    <ClInclude Include="..\..\PyBuiltInTPrint.h" />
+    <ClInclude Include="..\..\PyByteCode.h" />
+    <ClInclude Include="..\..\PyCallable.h" />
+    <ClInclude Include="..\..\PyCell.h" />
+    <ClInclude Include="..\..\PyCode.h" />
+    <ClInclude Include="..\..\PyException.h" />
+    <ClInclude Include="..\..\PyExceptionType.h" />
+    <ClInclude Include="..\..\PyFloat.h" />
+    <ClInclude Include="..\..\PyFrame.h" />
+    <ClInclude Include="..\..\PyFunction.h" />
+    <ClInclude Include="..\..\PyFunList.h" />
+    <ClInclude Include="..\..\PyFunListIterator.h" />
+    <ClInclude Include="..\..\PyInt.h" />
+    <ClInclude Include="..\..\PyList.h" />
+    <ClInclude Include="..\..\PyListIterator.h" />
+    <ClInclude Include="..\..\PyNone.h" />
+    <ClInclude Include="..\..\PyObject.h" />
+    <ClInclude Include="..\..\PyParser.h" />
+    <ClInclude Include="..\..\PyRange.h" />
+    <ClInclude Include="..\..\PyRangeIterator.h" />
+    <ClInclude Include="..\..\PyRangeType.h" />
+    <ClInclude Include="..\..\PyScanner.h" />
+    <ClInclude Include="..\..\PyStack.h" />
+    <ClInclude Include="..\..\PyStr.h" />
+    <ClInclude Include="..\..\PyStrIterator.h" />
+    <ClInclude Include="..\..\PyToken.h" />
+    <ClInclude Include="..\..\PyTuple.h" />
+    <ClInclude Include="..\..\PyTupleIterator.h" />
+    <ClInclude Include="..\..\PyType.h" />
+    <ClInclude Include="..\..\PyUtil.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\main.cpp" />
+    <ClCompile Include="..\..\PyAttr.cpp" />
+    <ClCompile Include="..\..\PyBool.cpp" />
+    <ClCompile Include="..\..\PyBuiltInConcat.cpp" />
+    <ClCompile Include="..\..\PyBuiltInFPrint.cpp" />
+    <ClCompile Include="..\..\PyBuiltInInput.cpp" />
+    <ClCompile Include="..\..\PyBuiltInIter.cpp" />
+    <ClCompile Include="..\..\PyBuiltInLen.cpp" />
+    <ClCompile Include="..\..\PyBuiltInPrint.cpp" />
+    <ClCompile Include="..\..\PyBuiltInTPrint.cpp" />
+    <ClCompile Include="..\..\PyByteCode.cpp" />
+    <ClCompile Include="..\..\PyCallable.cpp" />
+    <ClCompile Include="..\..\PyCell.cpp" />
+    <ClCompile Include="..\..\PyCode.cpp" />
+    <ClCompile Include="..\..\PyException.cpp" />
+    <ClCompile Include="..\..\PyExceptionType.cpp" />
+    <ClCompile Include="..\..\PyFloat.cpp" />
+    <ClCompile Include="..\..\PyFrame.cpp" />
+    <ClCompile Include="..\..\PyFunction.cpp" />
+    <ClCompile Include="..\..\PyFunList.cpp" />
+    <ClCompile Include="..\..\PyFunListIterator.cpp" />
+    <ClCompile Include="..\..\PyInt.cpp" />
+    <ClCompile Include="..\..\PyList.cpp" />
+    <ClCompile Include="..\..\PyListIterator.cpp" />
+    <ClCompile Include="..\..\PyNone.cpp" />
+    <ClCompile Include="..\..\PyObject.cpp" />
+    <ClCompile Include="..\..\PyParser.cpp" />
+    <ClCompile Include="..\..\PyRange.cpp" />
+    <ClCompile Include="..\..\PyRangeIterator.cpp" />
+    <ClCompile Include="..\..\PyRangeType.cpp" />
+    <ClCompile Include="..\..\PyScanner.cpp" />
+    <ClCompile Include="..\..\PyStr.cpp" />
+    <ClCompile Include="..\..\PyStrIterator.cpp" />
+    <ClCompile Include="..\..\PyToken.cpp" />
+    <ClCompile Include="..\..\PyTuple.cpp" />
+    <ClCompile Include="..\..\PyTupleIterator.cpp" />
+    <ClCompile Include="..\..\PyType.cpp" />
+    <ClCompile Include="..\..\PyUtil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

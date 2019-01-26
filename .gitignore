@@ -1,0 +1,14 @@
+.vs
+/coco/coco/Debug
+/coco/Debug
+*.ncb
+*.suo
+*.con
+*.user
+*.pdb
+*.ilk
+*.vcproj
+*.pyc
+.tags
+.tags_sorted_by_file
+.idea
